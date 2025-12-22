@@ -1,1 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Sitio con Bootstrap 5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">MiSitio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#cards">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ================= HEADER ================= -->
+<header id="inicio" class="hero-section text-center">
+    <div class="container">
+        <h1>Proyecto Web con Bootstrap 5</h1>
+        <p class="lead">Diseño moderno, responsivo y personalizado con CSS3</p>
+
+        <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#infoExtra">
+            Ver más
+        </button>
+
+        <div class="collapse mt-3" id="infoExtra">
+            <p class="text-light">
+                Este sitio demuestra el uso de Grid, Flexbox, componentes y estilos personalizados.
+            </p>
+        </div>
+    </div>
+</header>
+
+<!-- ================= SECCIÓN CARDS ================= -->
+<section id="cards" class="container my-5">
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card h-100 shadow">
+                <img src="assets/img/imagen1.jpg" class="card-img-top img-fluid" alt="Imagen">
+                <div class="card-body">
+                    <h3 class="card-title">Diseño Responsivo</h3>
+                    <p class="card-text">
+                        Adaptable a móviles, tablets y escritorio usando Bootstrap Grid.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 shadow">
+                <img src="assets/img/imagen1.jpg" class="card-img-top img-fluid" alt="Imagen">
+                <div class="card-body">
+                    <h3 class="card-title">Componentes</h3>
+                    <p class="card-text">
+                        Navbar, cards, botones, collapse y formularios interactivos.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 shadow">
+                <img src="assets/img/imagen1.jpg" class="card-img-top img-fluid" alt="Imagen">
+                <div class="card-body">
+                    <h3 class="card-title">CSS3 Avanzado</h3>
+                    <p class="card-text">
+                        Animaciones, transiciones y media queries personalizadas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FORMULARIO ================= -->
+<section id="contacto" class="container my-5">
+    <h2 class="text-center mb-4">Contacto</h2>
+
+    <form class="row g-3">
+        <div class="col-md-6">
+            <label class="form-label">Nombre</label>
+            <input type="text" class="form-control" placeholder="Tu nombre">
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="correo@email.com">
+        </div>
+
+        <div class="col-12">
+            <label class="form-label">Comentarios</label>
+            <textarea class="form-control" rows="4"></textarea>
+        </div>
+
+        <div class="col-12 text-center">
+            <button class="btn btn-primary mt-3">Enviar</button>
+        </div>
+    </form>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer bg-light text-center p-3">
+    <p>&copy; 2025 Mi Sitio Bootstrap</p>
+    <a href="#">Inicio</a> |
+    <a href="#">Servicios</a> |
+    <a href="#">Contacto</a>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
 
